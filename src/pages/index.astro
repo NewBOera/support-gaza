@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import About from '../sections-pages/index/About.astro';
+
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import Home from '../sections-pages/index/Home.astro';
+import Book from '../sections-pages/index/Book.astro';
+import AgeVerification from '../components/cookies/AgeVerification';
+import Save from '../sections-pages/index/Save.astro';
+import Campaign from '../sections-pages/index/Campaing.astro';
+import Donators from '../sections-pages/index/Donators.astro';
+import Testimonials from '../sections-pages/index/Testimonials.astro';
+---
+
+<Layout title="">
+  <!-- ? navbar mobile -->
+  <NavbarMobile isLanding={true} />
+
+  <!-- ? Header section desktop-->
+  <NavbarDesktop isLanding={true} />
+
+  <main class="flex flex-col">
+    <Home />
+    <Save />
+    <Campaign />
+    <About />
+    <Donators />
+    <Testimonials />
+    <Book />
+  </main>
+
+  <!-- ! Modals -->
+  <!-- ? Age Verification Modal -->
+  <AgeVerification client:load cookieName="[test]" />
+</Layout>

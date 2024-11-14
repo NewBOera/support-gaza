@@ -1,0 +1,13 @@
+---
+import SectionStructure from '../../structures/SectionStructure.astro';
+import Form from '../../components/form/Form';
+---
+
+<SectionStructure idSection="book">
+  <article>
+    <h2 class="text-[20px]/[27px] md:text-[24px]/[29px] lg:text-[26px]/[40px] xl:text-[32px]/[42px] font-semibold">Only the Top-Tier Casino Tournaments</h2>
+    <h4 class="text-[16px]/[26px] md:text-[22px]/[29px] lg:text-[24px]/[30px] xl:text-[24px]/[32px] font-light lg:font-normal">The official hub to the top brick-and-mortar casinos in the UK</h4>
+  </article>
+
+  <Form client:only="react" />
+</SectionStructure>

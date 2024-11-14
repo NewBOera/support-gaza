@@ -1,0 +1,59 @@
+---
+import HeroStructure from '../../structures/HeroStructure.astro';
+import SectionStructure from '../../structures/SectionStructure.astro';
+---
+
+<!-- ? Home section -->
+<HeroStructure id="home-section" wrapperClasses=" min-h-[450px] pb-10 md:min-h-[670px] justify-center" sectionClasses="home-section  bg-hero bg-image ">
+  <article class="w-[85%] md:w-[80%] lg:w-[70%]">
+    <h1 class="text-[32px]/[41px] md:text-[38px]/[50px] lg:text-[64px]/[80px] text-white font-bold">
+      More than 400 children in Gaza <br />
+    </h1>
+    <div class="bg-red-600 text-white text-[32px]/[41px] md:text-[40px]/[50px] lg:text-[64px]/[80px] font-bold">Are NOW dying From Hunger!</div>
+    <div class="bg-[#17344ECC]/[80%] p-2">
+      <h2 class="text-[#FFB700] summit text-[32px]/[41px] md:text-[40px]/[50px] lg:text-[64px]/[91px]">There is no time to waste!</h2>
+    </div>
+
+    <div class="bg-[#FFF3D7] shadow-lg hidden md:flex rounded-[10px] mt-5 p-4 w-[60%] flex-col gap-4 items-center">
+      <h3 class="text-2xl lg:text-[48px]/[64px] font-bold">Provide emergency aid</h3>
+      <p class="text-justify lg:text-xl">Provide life-saving emergency aid to those affected by war and conflict. Children are innocent victims of war and must always be protected</p>
+      <span class="self-start font-bold text-xl">Select the desired amount</span>
+
+      <div class="flex gap-4 lg:[&>div]:w-[33%] [&>div]:text-center justify-evenly w-full">
+        <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3">
+          <span>200 Kr</span>
+        </div>
+        <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-[#17354E] text-white text-xl font-bold px-3">
+          <span>300 Kr</span>
+        </div>
+        <div class="p-1 hover:scale-105 cursor-pointer lg:text-xl transition-all duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3">
+          <span>500 Kr</span>
+        </div>
+      </div>
+
+      <button class="bg-white rounded-[10px] lg:text-xl w-full border-[2px] text-xl font-bold border-[#17354E] p-2">Set the amount</button>
+    </div>
+  </article>
+</HeroStructure>
+
+<SectionStructure wrapperClasses="md:hidden" idSection="test">
+  <div class="bg-[#FFF3D7] flex rounded-[10px] shadow-lg mt-2 p-4 flex-col gap-4 items-center">
+    <h3 class="text-xl text-start font-bold">Provide emergency aid</h3>
+    <p class="text-justify text-sm">Provide life-saving emergency aid to those affected by war and conflict. Children are innocent victims of war and must always be protected</p>
+    <span class="self-start font-bold text-lg">Select the desired amount</span>
+
+    <div class="flex gap-4 lg:[&>div]:w-[33%] [&>div]:text-center justify-evenly w-full">
+      <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3">
+        <span>200 Kr</span>
+      </div>
+      <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-[#17354E] text-white font-bold px-3">
+        <span>300 Kr</span>
+      </div>
+      <div class="p-1 hover:scale-105 cursor-pointer lg:text-xl transition-all duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3">
+        <span>500 Kr</span>
+      </div>
+    </div>
+
+    <button class="bg-white rounded-[10px] w-full border-[2px] font-bold border-[#17354E] p-2">Set the amount</button>
+  </div>
+</SectionStructure>

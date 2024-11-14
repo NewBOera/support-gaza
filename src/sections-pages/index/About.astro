@@ -1,0 +1,35 @@
+---
+import SectionStructure from '../../structures/SectionStructure.astro';
+---
+
+<SectionStructure idSection="about-us" sectionClasses="bg-[#F2F2F2]" wrapperClasses=" py-16">
+  <article class="flex flex-col lg:flex-row-reverse lg:gap-14 lg:items-center gap-4">
+    <div class="lg:w-1/2">
+      <h3 class="text-[#FFB700] summit text-[30px]/[45px] md:text-[48px]/[64px]">About the foundation</h3>
+      <h4 class="font-bold text-[32px]/[41px] md:text-[40px]/[50px]">Hunger doesn’t wait. <br class="hidden md:block" /> ACT NOW or LET DIE A CHILD TODAY!</h4>
+      <p class="md:text-xl">This is the harsh reality that thousands of children in Gaza live with every day. If we don’t do something about it now, those children won’t see tomorrow.</p>
+
+      <h5 class="font-bold text-xl md:text-2xl">A Norwegian alliance for LIFE and HOPE for Gaza</h5>
+      <p class="md:text-xl">
+        This is not just a cause, it is a commitment that defies our values and humanity. In the face of tragedy and injustice, the Norwegian Ministry of Foreign Affairs together with Plan
+        International Norge and Norks Folkehjelp have joined forces in an alliance that represents justice, solidarity and commitment with humanity, the values that characterize Norway.
+      </p>
+      <p class="md:text-xl">
+        Don’t stand by and watch as they starve to death, every donation saves lives, every minute counts. This tragedy can stop, make your contribution now and prevent a child from dying today.
+      </p>
+
+      <h5 class="font-bold text-xl md:text-xl">Their life is in your hands, What will you do?</h5>
+      <button class="text-white md:text-3xl w-full font-bold text-2xl mt-5 hover:scale-105 transition-all duration-200 bg-[#FF4714] uppercase p-2 rounded-[50px]">Donate now</button>
+    </div>
+
+    <div class="flex flex-col h-full gap-4 lg:w-1/2">
+      <img src="/public/assets/about/image.png" class="md:hidden" alt="" />
+      <img src="/public/assets/about/tablet.png" class="hidden md:block" alt="" />
+
+      <div class="flex flex-col md:flex-row md:items-center">
+        <span class="text-center summit text-2xl md:text-3xl md:w-1/2">“It is better to light a candle than to curse the darkness”</span>
+        <span class="text-center font-medium text-xl md:w-1/2 md:text-2xl">-Konfucius</span>
+      </div>
+    </div>
+  </article>
+</SectionStructure>
