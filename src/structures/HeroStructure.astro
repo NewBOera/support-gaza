@@ -34,9 +34,16 @@ const { id, wrapperClasses, sectionClasses } = Astro.props;
 
   .bg-image {
     background-size: cover;
-    background-position: calc(50% - 40px) calc(50% + 40px);
+    background-position: center;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: 1024px) {
+    .bg-image {
+      background-position: calc(50% - 40px) calc(50% + 40px);
+    }
+  }
+
   .home-section {
     min-height: max-content;
   }
@@ -49,7 +56,6 @@ const { id, wrapperClasses, sectionClasses } = Astro.props;
   @media (min-width: 1024px) {
     .home-section {
       height: calc(100vh);
-      min-height: 800px;
     }
   }
 

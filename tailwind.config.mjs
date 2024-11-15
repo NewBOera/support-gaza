@@ -7,7 +7,7 @@ export default {
         color: '#example',
       },
       fontFamily: {
-        Font: ['example', 'default'],
+        Epilogue: ['Epilogue', 'sans-serif'],
       },
     },
   },
