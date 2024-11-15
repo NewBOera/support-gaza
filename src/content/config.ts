@@ -1,9 +1,9 @@
 import { defineCollection } from 'astro:content';
-import { ExampleSchema } from '../d';
+import { FamousDonatorSchema } from '../d';
 
-const collectionExample = defineCollection({
+const famousDonators = defineCollection({
     type: 'data',
-    schema: ExampleSchema,
+    schema: FamousDonatorSchema,
 });
 
-export const collections = { collectionExample };
+export const collections = { famousDonators };

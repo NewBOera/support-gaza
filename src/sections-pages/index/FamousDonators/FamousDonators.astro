@@ -1,22 +1,15 @@
 ---
 import SectionStructure from '../../../structures/SectionStructure.astro';
+import FamousDonatorsSwiper from './FamousDonatorsSwiper';
 ---
 
-<SectionStructure idSection="donators" sectionClasses="bg-[#FFE3DB]" wrapperClasses="py-10">
+<SectionStructure idSection="donators" sectionClasses="bg-[#FFE3DB] " wrapperClasses="py-10 overflow-x-hidden">
     <article class="flex flex-col lg:flex-row items-center gap-20">
         <h4 class="font-bold text-[32px]/[41px] lg:text-4xl">Famous Donators</h4>
         <span class="text-xl font-Epilogue italic lg:text-4xl">Combatants with Conscientiousness</span>
     </article>
 
     <article class="flex flex-col lg:flex-row gap-5">
-        <div class="bg-white p-3 h-[550px] w-full max-w-[340px] shadow-md rounded-[10px]">
-            <div class="w-full h-[85%]">
-                <img src="/public/assets/donators/1.png" class="object-contain h-full w-full" alt="" />
-            </div>
-            <div class="flex flex-col -mt-4 items-center">
-                <img src="/public/assets/donators/up.png" class="w-[35px] h-[35px]" alt="" />
-                <h5 class="font-bold text-center text-2xl">More info</h5>
-            </div>
-        </div>
+        <FamousDonatorsSwiper client:load />
     </article>
 </SectionStructure>
