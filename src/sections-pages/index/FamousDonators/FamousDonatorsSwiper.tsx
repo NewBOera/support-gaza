@@ -12,7 +12,7 @@ import { getCollection } from 'astro:content';
 
 // export const FamousDonatorCard: React.FC = () => {
 //     return (
-//         <article className="bg-white p-3 h-[550px] w-[340px] shadow-md rounded-[10px]">
+//         <article className="bg-white p-3 h-[550px] w-full max-w-[340px] shadow-md rounded-[10px]">
 //             <div className="w-full h-[85%]">
 //                 <img src="/public/assets/donators/1.png" className="object-contain h-full w-full" alt="" />
 //             </div>
@@ -21,6 +21,7 @@ import { getCollection } from 'astro:content';
 //                 <h5 className="font-bold text-center text-2xl">More info</h5>
 //             </div>
 //         </article>
+
 //     );
 // };
 
