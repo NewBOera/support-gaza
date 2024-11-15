@@ -10,10 +10,10 @@ import SectionStructure from '../../structures/SectionStructure.astro';
         </div>
 
         <div class="flex flex-col md:flex-row md:flex-wrap md:[&>div]:w-[48%] lg:[&>div]:w-[46%] gap-5">
-            <div class="h-[120px] bg-red-200"></div>
-            <div class="h-[120px] bg-red-200"></div>
-            <div class="h-[120px] bg-red-200"></div>
-            <div class="h-[120px] bg-red-200"></div>
+            <div class="h-[150px] shadow-md card1 bg-image"></div>
+            <div class="h-[150px] shadow-md card2 bg-image"></div>
+            <div class="h-[150px] shadow-md card3 bg-image"></div>
+            <div class="h-[150px] shadow-md card4 bg-image"></div>
         </div>
     </article>
     <div class="h-[300px] lg:h-full rounded-b-[10px] lg:rounded-none lg:rounded-l-[10px] p-5 bg-promise bg-image md:w-[80%] lg:w-1/2">
@@ -22,8 +22,26 @@ import SectionStructure from '../../structures/SectionStructure.astro';
 </SectionStructure>
 
 <style>
+    .card1 {
+        background: url('/public/assets/promise/1.png');
+    }
+    .card2 {
+        background: url('/public/assets/promise/2.png');
+    }
+    .card3 {
+        background: url('/public/assets/promise/3.png');
+    }
+    .card4 {
+        background: url('/public/assets/promise/4.png');
+    }
     .bg-promise {
         background-image: linear-gradient(180deg, #000000 0%, rgba(94, 94, 94, 0) 51%), url('/public/assets/promise/bg.jpeg');
+    }
+
+    .card-image {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .bg-image {
         background-size: cover;
