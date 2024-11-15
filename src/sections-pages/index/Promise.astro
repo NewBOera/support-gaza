@@ -2,32 +2,32 @@
 import SectionStructure from '../../structures/SectionStructure.astro';
 ---
 
-<SectionStructure idSection="testimonials" sectionClasses="bg-[#F2F2F2]" wrapperClasses="lg:flex-row-reverse items-center py-10 min-h-[250px] gap-0 md:gap-0 justify-center">
-  <article class="bg-white flex flex-col gap-5 rounded-t-[10px] lg:rounded-none lg:rounded-r-[10px] md:w-[80%] p-5 lg:w-1/2">
-    <div>
-      <h4 class="font-bold text-3xl md:text-4xl">Our promise</h4>
-      <p class="text-sm md:text-lg font-medium">Each week we will be sharing all the food and must have items that will be purchased with your donations.</p>
-    </div>
+<SectionStructure idSection="promise" sectionClasses="bg-[#F2F2F2]" wrapperClasses="lg:flex-row-reverse items-center py-10 min-h-[250px] gap-0 md:gap-0 justify-center">
+    <article class="bg-white flex flex-col gap-5 rounded-t-[10px] lg:rounded-none lg:rounded-r-[10px] md:w-[80%] p-5 lg:w-1/2">
+        <div>
+            <h4 class="font-bold text-3xl md:text-4xl">Our promise</h4>
+            <p class="text-sm md:text-lg font-medium">Each week we will be sharing all the food and must have items that will be purchased with your donations.</p>
+        </div>
 
-    <div class="flex flex-col md:flex-row md:flex-wrap md:[&>div]:w-[48%] lg:[&>div]:w-[46%] gap-5">
-      <div class="h-[120px] bg-red-200"></div>
-      <div class="h-[120px] bg-red-200"></div>
-      <div class="h-[120px] bg-red-200"></div>
-      <div class="h-[120px] bg-red-200"></div>
+        <div class="flex flex-col md:flex-row md:flex-wrap md:[&>div]:w-[48%] lg:[&>div]:w-[46%] gap-5">
+            <div class="h-[120px] bg-red-200"></div>
+            <div class="h-[120px] bg-red-200"></div>
+            <div class="h-[120px] bg-red-200"></div>
+            <div class="h-[120px] bg-red-200"></div>
+        </div>
+    </article>
+    <div class="h-[300px] lg:h-full rounded-b-[10px] lg:rounded-none lg:rounded-l-[10px] p-5 bg-promise bg-image md:w-[80%] lg:w-1/2">
+        <h5 class="text-white text-lg md:text-2xl lg:text-3xl italic">“You would help me if you were here, don't let a screen stop you from doing it”</h5>
     </div>
-  </article>
-  <div class="h-[300px] lg:h-full rounded-b-[10px] lg:rounded-none lg:rounded-l-[10px] p-5 bg-promise bg-image md:w-[80%] lg:w-1/2">
-    <h5 class="text-white text-lg md:text-2xl lg:text-3xl italic">“You would help me if you were here, don't let a screen stop you from doing it”</h5>
-  </div>
 </SectionStructure>
 
 <style>
-  .bg-promise {
-    background-image: linear-gradient(180deg, #000000 0%, rgba(94, 94, 94, 0) 51%), url('/public/assets/promise/bg.jpeg');
-  }
-  .bg-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    .bg-promise {
+        background-image: linear-gradient(180deg, #000000 0%, rgba(94, 94, 94, 0) 51%), url('/public/assets/promise/bg.jpeg');
+    }
+    .bg-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 </style>

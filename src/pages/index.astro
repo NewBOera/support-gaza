@@ -15,24 +15,19 @@ import Promise from '../sections-pages/index/Promise.astro';
 ---
 
 <Layout title="">
-  <!-- ? navbar mobile -->
-  <NavbarMobile isLanding={true} />
+    <!-- ? navbar mobile -->
+    <NavbarMobile isLanding={true} />
 
-  <!-- ? Header section desktop-->
-  <NavbarDesktop isLanding={true} />
+    <!-- ? Header section desktop-->
+    <NavbarDesktop isLanding={true} />
 
-  <main class="flex flex-col">
-    <Home />
-    <Save />
-    <Campaign />
-    <About />
-    <Donators />
-    <Testimonials />
-    <Promise />
-    <Book />
-  </main>
-
-  <!-- ! Modals -->
-  <!-- ? Age Verification Modal -->
-  <AgeVerification client:load cookieName="[test]" />
+    <main class="flex flex-col">
+        <Home />
+        <Save />
+        <Campaign />
+        <About />
+        <Donators />
+        <Testimonials />
+        <Promise />
+    </main>
 </Layout>

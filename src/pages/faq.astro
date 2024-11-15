@@ -7,17 +7,13 @@ import FaqContent from '../sections-pages/Faq/FaqContent.astro';
 ---
 
 <Layout title="">
-  <!-- ? navbar mobile -->
-  <NavbarMobile isLanding={false} />
+    <!-- ? navbar mobile -->
+    <NavbarMobile isLanding={false} />
 
-  <!-- ? Header section desktop-->
-  <NavbarDesktop isLanding={false} />
+    <!-- ? Header section desktop-->
+    <NavbarDesktop isLanding={false} />
 
-  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
-    <FaqContent />
-  </main>
-
-  <!-- ! Modals -->
-  <!-- ? Age Verification Modal -->
-  <AgeVerification client:load cookieName="[test]" />
+    <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
+        <FaqContent />
+    </main>
 </Layout>

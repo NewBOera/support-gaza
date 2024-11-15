@@ -28,11 +28,14 @@ const { isLanding } = Astro.props;
         <div class="w-[200px] p-5 rounded-r-[50px]">
             <ul class="flex flex-col md:text-lg gap-5">
                 <li class="text-base font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#home-section' : 'index.html'}>Home</a></li>
+
                 <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#about-us-section' : 'index.html#about-us-section'}>About Us</a></li>
-                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#packages-section' : 'index.html#packages-section'}>Packages</a></li>
-                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#contact' : 'index.html#contact'}>Contact</a></li>
-                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#subscription-section' : 'index.html#subscription-section'}>Live and Suscription</a></li>
-                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#faq-section' : 'index.html#faq-section'}>FAQ</a></li>
+
+                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#donators-section' : 'index.html#donators-section'}>Famous in Action</a></li>
+
+                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '#promise-section' : 'index.html#promise-section'}>Promise</a></li>
+
+                <li class="font-medium leading-[normal]"><a onclick=" toggleMenu()" href={isLanding ? '/faq.html' : '/faq.html'}>F.A.Q.</a></li>
             </ul>
         </div>
     </div>
