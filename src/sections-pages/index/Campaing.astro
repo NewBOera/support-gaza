@@ -3,18 +3,21 @@ import SectionStructure from '../../structures/SectionStructure.astro';
 ---
 
 <SectionStructure idSection="about-us" sectionClasses="bg-white" wrapperClasses="py-5 md:py-10">
-  <article class="flex flex-col md:flex-row md:justify-evenly gap-3 text-center items-center">
-    <div class="flex flex-col items-center lg:flex-row lg:items-center lg:gap-5 gap-3">
-      <h3 class="font-bold text-lg md:text-xl lg:text-3xl">A charity campaign organized by:</h3>
-      <img src="/public/assets/campaing/norwegian.png" class="md:h-[90px] w-[177px] object-contain md:w-auto" alt="" />
-    </div>
+    <article class="flex flex-col md:gap-10 md:flex-row md:justify-evenly gap-3 text-center items-center">
+        <div class="flex flex-col items-center lg:gap-5 gap-3">
+            <div class="flex gap-2 items-center">
+                <img class="object-contain w-6 lg:w-9" src="/public/assets/navbar/logo.png" alt="Logo" title="help" />
+                <span class="summit text-2xl lg:text-4xl xl:block text-[#DF1818] font-semibold pt-1">Front-aid</span>
+            </div>
+            <h3 class="font-bold text-lg md:text-xl lg:text-3xl">This campaign is sponsored by:</h3>
+        </div>
 
-    <div class="flex flex-col gap-3">
-      <h3 class="font-bold text-xl lg:text-3xl">In collaboration with:</h3>
-      <div class="flex gap-3 md:gap-8 justify-center items-center">
-        <img src="/public/assets/campaing/1.png" alt="" />
-        <img src="/public/assets/campaing/2.png" alt="" />
-      </div>
-    </div>
-  </article>
+        <div class="flex flex-col gap-3">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-3 md:gap-8 justify-center items-center">
+                <img src="/public/assets/campaing/norwegian.png" class="md:h-[90px] w-[177px] object-contain md:w-auto" alt="" />
+                <img src="/public/assets/campaing/1.png" class="max-w-[150px]" alt="" />
+                <img src="/public/assets/campaing/2.png" alt="" />
+            </div>
+        </div>
+    </article>
 </SectionStructure>
