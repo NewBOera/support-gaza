@@ -16,32 +16,8 @@ interface Donations {
     amount: number;
     message: string;
     donator: string;
+    dateTime: string;
 }
-
-export const swiperDonator = {
-    loop: true,
-    slidesPerView: 1,
-    modules: [Autoplay],
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: true,
-    },
-
-    breakpoints: {
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        },
-    },
-};
 
 export default function DonatorsSwiper() {
     const [donations, setDonations] = useState<Donations[]>([]);
@@ -60,6 +36,13 @@ export default function DonatorsSwiper() {
 
     function generateAmount() {
         return Math.floor(Math.random() * (1250 - 250 + 1)) + 250;
+    }
+
+    function generateCurrentDateTime() {
+        const now = new Date();
+        const date = now.toLocaleDateString();
+        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        return `${date} ${time}`;
     }
 
     useEffect(() => {
@@ -85,13 +68,12 @@ export default function DonatorsSwiper() {
             amount: generateAmount(),
         }));
 
-        const donations = getFromLocaleStorage();
-        if (donations && donations.length <= 3) {
-            setDonations(prevDonations => [...prevDonations, ...newDonations].slice(0, 2));
-        }
+        const addRandomDonation: any = () => {
+            const newDonation = {
+                ...newDonations[index],
+                dateTime: generateCurrentDateTime(), // Fecha y hora en el momento de creación
+            };
 
-        const addRandomDonation = () => {
-            const newDonation = newDonations[index];
             const totalDonations = localStorage.getItem('donationsGaza');
             if (totalDonations && JSON.parse(totalDonations).length >= 50) return;
 
@@ -111,8 +93,6 @@ export default function DonatorsSwiper() {
 
         return () => clearTimeout(addRandomDonation);
     }, []);
-
-    useEffect(() => {}, [donations]);
 
     return (
         <Swiper
@@ -141,7 +121,7 @@ export default function DonatorsSwiper() {
         >
             {donations.map((donation, index) => (
                 <SwiperSlide key={index} className="flex justify-center">
-                    <DonationCard amount={donation.amount} message={donation.message} donator={donation.donator} />
+                    <DonationCard amount={donation.amount} message={donation.message} donator={donation.donator} dateTime={donation.dateTime} />
                 </SwiperSlide>
             ))}
         </Swiper>
