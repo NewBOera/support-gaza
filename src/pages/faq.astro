@@ -1,12 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import NavbarMobile from '../components/header/NavbarMobile.astro';
 import NavbarDesktop from '../components/header/NavbarDesktop.astro';
-import AgeVerification from '../components/cookies/AgeVerification';
 import FaqContent from '../sections-pages/Faq/FaqContent.astro';
+import LayoutLegals from '../layouts/LayoutLegals.astro';
 ---
 
-<Layout title="">
+<LayoutLegals title="">
     <!-- ? navbar mobile -->
     <NavbarMobile isLanding={false} />
 
@@ -16,4 +15,4 @@ import FaqContent from '../sections-pages/Faq/FaqContent.astro';
     <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
         <FaqContent />
     </main>
-</Layout>
+</LayoutLegals>

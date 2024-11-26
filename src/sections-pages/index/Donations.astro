@@ -1,5 +1,6 @@
 ---
 import SectionStructure from '../../structures/SectionStructure.astro';
+import DonatorsSwiper from './Donations/DonatorsSwiper';
 ---
 
 <SectionStructure idSection="donations" sectionClasses="bg-[#F2F2F2]" wrapperClasses="">
@@ -8,10 +9,6 @@ import SectionStructure from '../../structures/SectionStructure.astro';
     </article>
 </SectionStructure>
 
-<SectionStructure idSection="=" sectionClasses="bg-[#DBF9FF] shadow-sm" wrapperClasses="w-full items-center py-5">
-    <div class="bg-white flex justify-center shadow-lg flex-col items-center w-[80%] max-w-[280px] h-[130px] rounded-[10px] p-2">
-        <span class="font-bold text-[#14C42E] text-3xl">+585 Kr</span>
-        <h5 class="font-semibold text-xl">“Let’s help Gaza!!🕊️”</h5>
-        <span class="text-sm">-Omar Al-Khatib</span>
-    </div>
+<SectionStructure idSection="=" sectionClasses="bg-[#DBF9FF] shadow-sm" wrapperClasses="w-full items-center py-5 overflow-x-hidden">
+    <DonatorsSwiper client:load />
 </SectionStructure>

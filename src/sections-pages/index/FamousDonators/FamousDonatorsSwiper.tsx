@@ -55,7 +55,7 @@ export const FamousDonatorCard: React.FC<FamousDonatorCardProps> = ({ data }) =>
     };
 
     return (
-        <article className="bg-white p-6 py-20 flex flex-col items-center gap-2 justify-center h-[560px] w-full max-w-[340px] shadow-md rounded-[10px]">
+        <article className="bg-white cursor-pointer p-6 py-20 flex flex-col items-center gap-2 justify-center h-[560px] w-full max-w-[340px] shadow-md rounded-[10px]">
             <div className={`flex-col gap-2 transition-all duration-300 ${visibleQuote ? 'flex z-20 opacity-100' : 'opacity-0 h-0 z-0'}`}>
                 <div className="w-full">
                     <img src={data.mainImage} className="object-contain h-full w-full" alt="" />
@@ -77,9 +77,10 @@ export const FamousDonatorCard: React.FC<FamousDonatorCardProps> = ({ data }) =>
                         />
                     </svg>
                 </button>
-                <h3 className="text-3xl font-bold">{data.famousName}</h3>
-                <p className="text-lg">{data.quote}</p>
-                <a className="bg-[#FF4714] text-center mt-3 font-2xl text-white font-bold py-3 px-10 rounded-[50px]">DONATE NOW</a>
+                <h3 className="text-2xl font-bold">{data.famousName}</h3>
+                <p className="text-base">{data.quote}</p>
+                <span className="font-bold text-lg">{data.amount}</span>
+                <a className="bg-[#FF4714] text-center mt-3 font-xl text-white font-bold py-3 px-10 rounded-[50px]">DONATE NOW</a>
             </div>
         </article>
     );
@@ -99,7 +100,7 @@ const FamousDonatorsSwiper = () => {
     }
 
     return (
-        <div className="w-full">
+        <div className="w-full flex justify-center mx-auto">
             <Swiper {...swiperFamousDonatorsProps}>
                 {donators.map(donator => {
                     return (
