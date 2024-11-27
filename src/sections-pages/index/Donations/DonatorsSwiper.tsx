@@ -13,7 +13,7 @@ import { messages } from '../../../data/messages';
 import { getCookie, setCookie } from '../../../../public/scripts/cookies';
 
 interface Donations {
-    amount: number;
+    amount: any;
     message: string;
     donator: string;
     dateTime: string;
@@ -36,6 +36,10 @@ export default function DonatorsSwiper() {
 
     function generateAmount() {
         return Math.floor(Math.random() * (1250 - 250 + 1)) + 250;
+    }
+
+    function formatAmount(amount: number): string {
+        return amount.toLocaleString('en-US');
     }
 
     function generateCurrentDateTime() {
@@ -121,7 +125,7 @@ export default function DonatorsSwiper() {
         >
             {donations.map((donation, index) => (
                 <SwiperSlide key={index} className="flex justify-center">
-                    <DonationCard amount={donation.amount} message={donation.message} donator={donation.donator} dateTime={donation.dateTime} />
+                    <DonationCard amount={formatAmount(donation.amount)} message={donation.message} donator={donation.donator} dateTime={donation.dateTime} />
                 </SwiperSlide>
             ))}
         </Swiper>

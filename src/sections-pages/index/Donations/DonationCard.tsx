@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface DonationCardProps {
-    amount: number;
+    amount: any;
     message: string;
     donator: string;
     dateTime: string; // Nueva propiedad para fecha y hora
