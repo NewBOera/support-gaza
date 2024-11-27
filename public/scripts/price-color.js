@@ -1,29 +1,35 @@
-const optionsContainer = document.getElementById('price-options');
+document.addEventListener('DOMContentLoaded', () => {
+    const priceOptions = document.querySelectorAll('#price-options > div');
 
-optionsContainer.addEventListener('click', e => {
-    const selectedOption = e.target.closest('div');
-    if (!selectedOption) return;
+    priceOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            // Remover las clases activas de todos los elementos
+            priceOptions.forEach(opt => {
+                opt.classList.remove('bg-[#17354E]', 'text-white');
+                opt.classList.add('bg-white', 'text-[#17354E]');
+            });
 
-    Array.from(optionsContainer.children).forEach(option => {
-        option.classList.remove('bg-[#17354E]', 'text-white');
-        option.classList.add('bg-white', 'text-[#17354E]');
+            // Añadir las clases activas al elemento clickeado
+            option.classList.add('bg-[#17354E]', 'text-white');
+            option.classList.remove('bg-white', 'text-[#17354E]');
+        });
     });
-
-    selectedOption.classList.add('bg-[#17354E]', 'text-white');
-    selectedOption.classList.remove('bg-white', 'text-[#17354E]');
 });
 
-const optionsContainerMobile = document.getElementById('price-options-mobile');
+document.addEventListener('DOMContentLoaded', () => {
+    const priceOptionsMobile = document.querySelectorAll('#price-options-mobile > div');
 
-optionsContainerMobile.addEventListener('click', e => {
-    const selectedOption = e.target.closest('div');
-    if (!selectedOption) return;
+    priceOptionsMobile.forEach(option => {
+        option.addEventListener('click', () => {
+            // Remover las clases activas de todos los elementos
+            priceOptionsMobile.forEach(opt => {
+                opt.classList.remove('bg-[#17354E]', 'text-white');
+                opt.classList.add('bg-white', 'text-[#17354E]');
+            });
 
-    Array.from(optionsContainerMobile.children).forEach(option => {
-        option.classList.remove('bg-[#17354E]', 'text-white');
-        option.classList.add('bg-white', 'text-[#17354E]');
+            // Añadir las clases activas al elemento clickeado
+            option.classList.add('bg-[#17354E]', 'text-white');
+            option.classList.remove('bg-white', 'text-[#17354E]');
+        });
     });
-
-    selectedOption.classList.add('bg-[#17354E]', 'text-white');
-    selectedOption.classList.remove('bg-white', 'text-[#17354E]');
 });
