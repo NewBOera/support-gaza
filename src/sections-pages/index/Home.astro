@@ -17,12 +17,12 @@ import SectionStructure from '../../structures/SectionStructure.astro';
             <h2 class="text-[#FFB700] font-Epilogue italic text-xl md:text-[40px]/[50px] lg:text-[45px]">There is no <br class="sm:hidden md:block xl:hidden" /> time to waste!</h2>
         </div>
 
-        <div class="bg-[#FFF3D7] shadow-lg hidden md:flex rounded-[10px] mt-5 p-4 w-[60%] flex-col gap-4 items-center">
+        <div class="bg-[#FFF3D7] shadow-lg hidden md:flex rounded-[10px] mt-5 p-8 w-[60%] flex-col gap-4 items-center">
             <h3 class="text-2xl lg:text-[42px]/[64px] font-bold">Provide emergency aid</h3>
             <p class="text-justify lg:text-xl">Provide life-saving emergency aid to those affected by war and conflict. Children are innocent victims of war and must always be protected</p>
-            <span class="self-start font-bold text-xl">Select the desired amount</span>
+            <!-- <span class="self-start font-bold text-xl">Select the desired amount</span> -->
 
-            <div id="price-options" class="flex gap-4 lg:[&>div]:w-[33%] [&>div]:text-center justify-evenly w-full">
+            <!-- <div id="price-options" class="flex gap-4 lg:[&>div]:w-[33%] [&>div]:text-center justify-evenly w-full">
                 <div
                     class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3 text-[#17354E]"
                     data-price="200"
@@ -41,9 +41,9 @@ import SectionStructure from '../../structures/SectionStructure.astro';
                 >
                     <span>500 kr</span>
                 </div>
-            </div>
+            </div> -->
 
-            <button class="bg-white rounded-[10px] lg:text-xl w-full border-[2px] text-xl font-bold border-[#17354E] p-2" onclick="openModal()">Set the amount</button>
+            <button class="bg-white rounded-[10px] lg:text-2xl w-full border-[2px] text-xl font-bold border-[#17354E] p-2" onclick="openModal()">Save a child now!</button>
         </div>
     </article>
 </HeroStructure>
@@ -60,9 +60,9 @@ import SectionStructure from '../../structures/SectionStructure.astro';
     <div class="bg-[#FFF3D7] shadow-lg flex rounded-[10px] mt-5 p-4 w-full flex-col gap-4 items-center">
         <h3 class="text-2xl lg:text-[42px]/[64px] font-bold">Provide emergency aid</h3>
         <p class="text-justify lg:text-xl">Provide life-saving emergency aid to those affected by war and conflict. Children are innocent victims of war and must always be protected</p>
-        <span class="self-start font-bold text-xl">Select the desired amount</span>
+        <!-- <span class="self-start font-bold text-xl">Select the desired amount</span> -->
 
-        <div id="price-options-mobile" class="flex [&>div]:w-[33%] [&>div]:text-center justify-between w-full">
+        <!-- <div id="price-options-mobile" class="flex [&>div]:w-[33%] [&>div]:text-center justify-between w-full">
             <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3 text-[#17354E]" data-price="200">
                 <span>200 kr</span>
             </div>
@@ -74,8 +74,8 @@ import SectionStructure from '../../structures/SectionStructure.astro';
             <div class="p-1 hover:scale-105 cursor-pointer transition-all lg:text-xl duration-200 border-[#17354E] border-[2px] rounded-[10px] bg-white font-bold px-3 text-[#17354E]" data-price="500">
                 <span>500 kr</span>
             </div>
-        </div>
+        </div> -->
 
-        <button onclick="openModal()" class="bg-white rounded-[10px] lg:text-xl w-full border-[2px] text-xl font-bold border-[#17354E] p-2">Set the amount</button>
+        <button onclick="openModal()" class="bg-white rounded-[10px] lg:text-xl w-full border-[2px] text-xl font-bold border-[#17354E] p-2">Save a child now!</button>
     </div>
 </SectionStructure>

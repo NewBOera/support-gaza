@@ -80,7 +80,9 @@ export const FamousDonatorCard: React.FC<FamousDonatorCardProps> = ({ data }) =>
                 <h3 className="text-2xl font-bold">{data.famousName}</h3>
                 <p className="text-base">{data.quote}</p>
                 <span className="font-bold text-lg">{data.amount}</span>
-                <a className="bg-[#FF4714] text-center mt-3 font-xl text-white font-bold py-3 px-10 rounded-[50px]">DONATE NOW</a>
+                <button onClick={() => openModal()} className="bg-[#FF4714] text-center mt-3 font-xl text-white font-bold py-3 px-10 rounded-[50px]">
+                    DONATE NOW
+                </button>
             </div>
         </article>
     );
