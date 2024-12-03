@@ -62,7 +62,7 @@ export const FamousDonatorCard: React.FC<FamousDonatorCardProps> = ({ data }) =>
                 </div>
                 <div className="flex flex-col items-center">
                     <button onClick={handleShowQuote}>
-                        <img className="more-btn w-[35px] bottom-11 mx-auto left-0 right-0 h-[35px]" src="/public/assets/donators/up.png" alt="" />
+                        <img className="more-btn w-[35px] bottom-11 mx-auto left-0 right-0 h-[35px]" src="https://shualim.online/wlp/forex/support-gaza/assets/donators/up.png" alt="" />
                     </button>
                     <h5 className="font-bold text-center text-2xl">More info</h5>
                 </div>

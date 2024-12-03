@@ -10,7 +10,9 @@ const { isLanding } = Astro.props;
     <nav class="flex w-full mx-auto justify-between items-center md:px-8 h-[80px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
         <div class="flex items-center grow gap-10">
             <div class="font-normal text-lg flex items-center gap-4">
-                <a href={isLanding ? '#home-section' : 'index.html'}><img class="object-contain w-8" src="/public/assets/navbar/logo.png" alt="Logo" title="help" /></a>
+                <a href={isLanding ? '#home-section' : 'index.html'}>
+                    <img class="object-contain w-8" src="https://shualim.online/wlp/forex/support-gaza/assets/navbar/logo.png" alt="Logo" title="help" />
+                </a>
                 <span class="summit text-2xl xl:block text-[#DF1818] font-semibold pt-1">Front-aid</span>
             </div>
         </div>
