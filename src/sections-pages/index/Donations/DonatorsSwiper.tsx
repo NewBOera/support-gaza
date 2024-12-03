@@ -64,18 +64,26 @@ export default function DonatorsSwiper() {
     useEffect(() => {
         const newDonators = mixArray(donators);
         const newMessages = mixArray(messages);
-        let index = 0;
 
-        const newDonations = newDonators.map((donator, index) => ({
+        // Generar tres donaciones iniciales
+        const initialDonations = Array.from({ length: 3 }, (_, index) => ({
             message: newMessages[index],
-            donator,
+            donator: newDonators[index],
             amount: generateAmount(),
+            dateTime: generateCurrentDateTime(),
         }));
+
+        setDonations(initialDonations);
+        localStorage.setItem('donationsGaza', JSON.stringify(initialDonations));
+
+        let index = 3; // Continuar después de las tres donaciones iniciales
 
         const addRandomDonation: any = () => {
             const newDonation = {
-                ...newDonations[index],
-                dateTime: generateCurrentDateTime(), // Fecha y hora en el momento de creación
+                message: newMessages[index],
+                donator: newDonators[index],
+                amount: generateAmount(),
+                dateTime: generateCurrentDateTime(),
             };
 
             const totalDonations = localStorage.getItem('donationsGaza');
